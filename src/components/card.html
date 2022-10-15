@@ -1,0 +1,43 @@
+<article class="card">
+  <figure class="card-image">
+    <picture>
+      <source
+        media="(max-width:767px)"
+        srcset="{{ cardImageMobile }}"
+        class="img-main"
+      />
+      <source
+        media="(max-width:1200px)"
+        srcset="{{ cardImageTablet }}"
+        class="img-main"
+      />
+      <img
+        src="{{ cardImage }}"
+        class="img-main card-image__primary"
+        alt="product 1 image"
+      />
+    </picture>
+    <img
+      src="../assets/icons/ic-view.svg"
+      class="img-main card-image__eye"
+      alt="eye image"
+    />
+    <div class="card-image__detail">
+      <img
+        src="../assets/icons/ic-view.svg"
+        class="img-main card-image__eye--small"
+        alt="eye image small"
+      />
+      <span class="card-image__view">{{ cardViews }}</span>
+    </div>
+    <div class="card-image__bg"></div>
+  </figure>
+
+  <!-- Start of card content -->
+  <div class="card__content">
+    <h3 class="title--third">{{ cardTitle }}</h3>
+    <p>by</p>
+    <p>{{ cardDesc }}</p>
+  </div>
+  <a href="javascript:void(0)" class="btn card__btn">review</a>
+</article>

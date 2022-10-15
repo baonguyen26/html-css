@@ -1,0 +1,87 @@
+@use "../../abstracts/" as *;
+
+/************************* contact **********************/
+.contact {
+  width: 100%;
+  @include bg-img("../assets/images/desktop/background-contact.png");
+  text-align: center;
+  padding: 68px 0 50px;
+  color: $background-color;
+
+  &__form {
+    max-width: 32.5rem;
+    margin: 52px auto 40px;
+    padding: 48px 52px 24px;
+    background-color: $text-color;
+    @include flex($direction: column);
+    border-radius: pxToRem(10);
+
+    @include tablet {
+      max-width: 22.5rem;
+    }
+
+    @include mobile {
+      padding: 35px;
+    }
+
+    &__input {
+      margin-bottom: 24px;
+    }
+
+    &__btn {
+      border: 2px solid $primary-color;
+      background-color: $primary-color;
+      margin: 0 auto;
+    }
+  }
+
+  &__info {
+    @include flex($align: center, $justify: center, $wrap: wrap);
+    margin-left: -1rem;
+    font-size: pxToRem(18);
+    gap: 16px;
+
+    @include tablet {
+      font-size: pxToRem(10.76);
+      line-height: pxToRem(30);
+    }
+
+    @include mobile {
+      padding-left: 10px;
+      max-width: 22.5rem;
+      margin: 0 auto;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-info {
+    &__list {
+      @include flex($align: center, $justify: center);
+    }
+
+    &__item {
+      margin-left: 1rem;
+
+      @include tablet {
+        margin-left: 1.5rem;
+      }
+
+      @include mobile {
+        margin-left: pxToRem(10);
+      }
+    }
+  }
+
+  &__icon {
+    width: 12px;
+    height: 17px;
+  }
+
+  &__info__icon {
+    width: 12px;
+    height: 10px;
+  }
+}
+
+/************************* end of contact **********************/

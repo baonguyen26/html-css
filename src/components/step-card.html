@@ -1,0 +1,29 @@
+<article class="card plans-card">
+  <figure class="card__img">
+    <picture>
+      <source
+        media="(max-width:767px)"
+        srcset="{{ cardImageTablet }}"
+        class="img-main"
+      />
+      <source
+        media="(max-width:1200px)"
+        srcset="{{ cardImageTablet }}"
+        class="img-main"
+      />
+      <img src="{{ cardImage }}" class="img-main" alt="plan image" />
+    </picture>
+    <figcaption>
+      <p class="text-uppercase title--third">{{ title }}</p>
+      <p class="card__price">{{ price }}</p>
+    </figcaption>
+  </figure>
+
+  <!-- Start of card content -->
+  <div class="card__content plans-card__content">
+    <each loop="item in {{ contents }}">
+      <p>{{ item }}</p>
+    </each>
+  </div>
+  <a href="javascript:void(0)" class="btn card__btn plans-card__btn">get started</a>
+</article>

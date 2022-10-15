@@ -1,0 +1,382 @@
+<main>
+  <!-- Result section -->
+  <section class="results">
+    <h2 class="title--secondary">Stunning Results</h2>
+    <p>Just look to the statistics we have generate the past year.</p>
+
+    <!-- Start result cards -->
+    <div class="results__cards">
+      <!-- Start result card -->
+      <article class="results-card">
+        <div class="card-circle">
+          <span class="card-circle__percent">74<sup>,98</sup></span>
+          <div class="card-circle__slice card-circle__slice--big">
+            <div class="card-circle__bar"></div>
+            <div class="card-circle__fill"></div>
+          </div>
+        </div>
+        <h3 class="title--third results-card__title">total conversion</h3>
+        <p class="results-card__desc">
+          The past few years have seen a dramatic change in the public
+          perception of cosmetic surgery.
+        </p>
+      </article>
+
+      <!-- Start result card -->
+      <article class="results-card">
+        <div class="card-circle">
+          <span class="card-circle__percent">39<sup>,75</sup></span>
+          <div class="card-circle__slice">
+            <div class="card-circle__bar card-circle__bar--small"></div>
+          </div>
+        </div>
+        <h3 class="title--third results-card__title">free downloads</h3>
+        <p class="results-card__desc">
+          Can you imagine what we will be downloading in another twenty years?
+        </p>
+      </article>
+
+      <!-- Start result card -->
+      <article class="results-card">
+        <div class="card-circle">
+          <span class="card-circle__percent">81<sup>,15</sup></span>
+          <div class="card-circle__slice card-circle__slice--big">
+            <div class="card-circle__bar"></div>
+            <div class="card-circle__fill card-circle__fill--big"></div>
+          </div>
+        </div>
+        <h3 class="title--third results-card__title">unique visitors</h3>
+        <p class="results-card__desc">
+          WordPress, the premier free open-source blogging utility, has gone
+          through several upgrades in its life.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <!-- About section -->
+  <section class="about">
+    <div class="container container-about">
+      <h2 class="title--secondary about__title">What Clients are saying</h2>
+
+      <!-- Start of slider -->
+      <div class="about-slider">
+        <figure class="about-slider__icon">
+          <img
+            src="../assets/icons/ic-prev.svg"
+            alt="prev icon"
+            class="img-main"
+          />
+        </figure>
+        <p class="about-slider__content">
+          Businesses at present had creatively generated effective advertising
+          campaigns in the form of audio visual media that includes the
+          television and radios and the print media that cover the newspaper and
+          campaign materials like the posters, brochures, business cards, flyers
+          and many more.
+        </p>
+        <figure class="about-slider__icon">
+          <img
+            src="../assets/icons/ic-next.svg"
+            alt="next icon"
+            class="img-main"
+          />
+        </figure>
+      </div>
+
+      <!-- Start of about person -->
+      <div class="about-person">
+        <figure class="about-person__image">
+          <img
+            src="../assets/images/desktop/person.png"
+            class="img-main"
+            alt="about person image"
+          />
+        </figure>
+        <div class="about-person__contact">
+          <p class="title--third person-name">Ophelia Holland</p>
+          <p>@ophelia_holland</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product section -->
+  <section class="products">
+    <div class="container container-products">
+      <h2 class="title--secondary">Recent Products</h2>
+      <p class="products__desc">
+        Having used discount toner cartridges for twenty years, there have been
+        a lot of changes in the toner cartridge market. The market today is
+        approximately a twenty billion dollar business.
+      </p>
+
+      <!-- Start of cards -->
+      <div class="cards">
+        <!-- Start of card -->
+        <include
+          src="./components/card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-product-1.png",
+            "cardImageTablet": "../assets/images/tablet/image-product-1.png",
+            "cardImageMobile": "../assets/images/mobile/image-product-1.png",
+            "cardViews": "91312",
+            "cardTitle": "app maintenance",
+            "cardDesc": "Lida Morrison, Nettie Burke"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/card.html"
+          locals='{
+          "cardImage": "../assets/images/desktop/image-product-2.png",
+          "cardImageTablet": "../assets/images/tablet/image-product-2.png",
+          "cardImageMobile": "../assets/images/mobile/image-product-2.png",
+          "cardViews": "91312",
+          "cardTitle": "fta keys",
+          "cardDesc": "Ivan Alexander, Steven Soto, Clifford Hammond"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-product-3.png",
+            "cardImageTablet": "../assets/images/tablet/image-product-3.png",
+            "cardImageMobile": "../assets/images/mobile/image-product-3.png",
+            "cardViews": "91312",
+            "cardTitle": "smart watch",
+            "cardDesc": "Trevor James, Carl Stevenson"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-product-4.png",
+            "cardImageTablet": "../assets/images/tablet/image-product-4.png",
+            "cardImageMobile": "../assets/images/mobile/image-product-4.png",
+            "cardViews": "91312",
+            "cardTitle": "watch apps",
+            "cardDesc": "Glen Snyder, Andrew Goodwin, Lida Morrison"
+          }'
+        >
+        </include>
+      </div>
+    </div>
+  </section>
+
+  <!-- Register section -->
+  <section class="register">
+    <h2 class="title--secondary">Start Selling Instantly</h2>
+    <p class="register__sub">
+      Start Selling With Your Pre-paid account. No deposit needed.
+    </p>
+
+    <!-- Start of form register -->
+    <form action="#" class="register__form">
+      <input
+        type="email"
+        name=""
+        id=""
+        class="input-main register__input"
+        placeholder="Email"
+        required
+      />
+      <input type="submit" value="register" class="btn register__btn" />
+    </form>
+  </section>
+
+  <!-- Feedback section -->
+  <section class="feedback">
+    <div class="container container-feedback">
+      <h2 class="title--secondary">What People Say</h2>
+      <div class="feedback__cards">
+        <!-- Start of primary card -->
+        <article class="feedback-card feedback-card__primary">
+          <p class="feedback-card__char">,,</p>
+          <p class="feedback-card__content">
+            It is not because things are difficult that we do not dare; it is
+            because we do not dare that they are difficult.
+          </p>
+          <p class="feedback-card__name">Seneca the Younger</p>
+          <p class="feedback-card__address">Editor in okodesign.net</p>
+          <figure class="feedback-card__avatar feedback-card__avatar--primary">
+            <img
+              src="../assets/images/desktop/avatar-feedback-1.png"
+              class="img-main"
+              alt="avatar image"
+            />
+          </figure>
+        </article>
+
+        <!-- Start of secondary card -->
+        <article class="feedback-card feedback-card__secondary">
+          <p class="feedback-card__char">,,</p>
+          <p class="feedback-card__content">
+            It is not because things are difficult that we do not dare; it is
+            because we do not dare that they are difficult.
+          </p>
+          <p class="feedback-card__name feedback-card__name--secondary">
+            Seneca the Younger
+          </p>
+          <p class="feedback-card__address">Editor in okodesign.net</p>
+          <figure
+            class="feedback-card__avatar feedback-card__avatar--secondary"
+          >
+            <img
+              src="../assets/images/desktop/avatar-feedback-2.png"
+              class="img-main"
+              alt="avatar image"
+            />
+          </figure>
+        </article>
+      </div>
+
+      <!-- Start of slider dots -->
+      <div class="slider-dots">
+        <div class="slider-dot slider-dot__active"></div>
+        <div class="slider-dot"></div>
+        <div class="slider-dot"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans section -->
+  <section class="plans">
+    <div class="container container-plans">
+      <h2 class="title--secondary">Subscribing Plans</h2>
+      <div class="cards plans__cards">
+        <!-- Start of card -->
+        <include
+          src="./components/step-card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-plans-1.png",
+            "cardImageTablet": "../assets/images/tablet/image-plans-1.png",
+            "cardImageTablet": "../assets/images/mobile/image-plans-1.png",
+            "title": "freemium",
+            "contents": "[`Basic Collections`, `10 Messages`, `50 Images per Day`]",
+            "price": "0"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/step-card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-plans-2.png",
+            "cardImageTablet": "../assets/images/tablet/image-plans-2.png",
+            "cardImageTablet": "../assets/images/mobile/image-plans-2.png",
+            "title": "start up",
+            "contents": "[`Multiple Collections`, `100 Messages`, `100 Images per Day`]",
+            "price": "9"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/step-card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-plans-3.png",
+            "cardImageTablet": "../assets/images/tablet/image-plans-3.png",
+            "cardImageTablet": "../assets/images/mobile/image-plans-3.png",
+            "title": "business",
+            "contents": "[`Unlimited Collections`, `500 Messages`, `300 Images per Day`, `Project Reviews`]",
+            "price": "29"
+          }'
+        >
+        </include>
+
+        <!-- Start of card -->
+        <include
+          src="./components/step-card.html"
+          locals='{
+            "cardImage": "../assets/images/desktop/image-plans-4.png",
+            "cardImageTablet": "../assets/images/tablet/image-plans-4.png",
+            "cardImageTablet": "../assets/images/mobile/image-plans-4.png",
+            "title": "Enterprice",
+            "contents": "[`Unlimited Collections`, `Unlimited Messages`, `Unlimited Images per Day`, `Project Reviews`]",
+            "price": "49"
+          }'
+        >
+        </include>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <section class="contact">
+    <div class="container">
+      <h2 class="title--secondary">Get in Touch</h2>
+
+      <!-- Start of form contact -->
+      <form action="#" class="contact__form">
+        <input
+          type="text"
+          class="input-main contact__form__input"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="email"
+          class="input-main contact__form__input"
+          placeholder="Email"
+          required
+        />
+        <textarea
+          class="input-main contact__form__input"
+          rows="5"
+          cols="30"
+          placeholder="Message"
+        ></textarea>
+        <label class="form-checkbox contact__form__input"
+          >Most Urgent Question <input type="checkbox" checked />
+          <span class="form-checkbox__checkmark"></span>
+        </label>
+        <input
+          type="submit"
+          value="submit"
+          class="btn card__btn contact__form__btn"
+        />
+      </form>
+
+      <!-- Start of contact info -->
+      <div class="contact__info">
+        <div class="contact-info__list">
+          <img
+            src="../assets/icons/ic-location.svg"
+            class="contact__icon"
+            alt="location icon"
+          />
+          <p class="contact-info__item">
+            2300 W Arbutus Dr Citrus Springs, FL 34434, USA
+          </p>
+        </div>
+        <div class="contact-info__list">
+          <img
+            src="../assets/icons/ic-mail.svg"
+            class="contact__icon contact__info__icon"
+            alt="mail icon"
+          />
+          <p class="contact-info__item">contact@hofmannui.net</p>
+        </div>
+        <div class="contact-info__list">
+          <img
+            src="../assets/icons/ic-phone.svg"
+            class="contact__icon"
+            alt="phone icon"
+          />
+          <p class="contact-info__item">952-775-6021</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>

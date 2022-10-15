@@ -1,0 +1,176 @@
+@use "../../abstracts/" as *;
+
+/************************* results **********************/
+.results {
+  max-width: 1044px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 69px 0 112px;
+
+  @include tablet {
+    max-width: 580px;
+    padding: 35px 0 48px;
+  }
+
+  &__title {
+    padding-bottom: 22px;
+  }
+
+  &__cards {
+    @include flex($justify: space-between, $wrap: wrap);
+    margin-top: 53px;
+
+    @include tablet {
+      margin-top: 27px;
+    }
+
+    @include mobile {
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &-card {
+    text-align: center;
+    @include flex($direction: column, $align: center);
+
+    &__title {
+      padding: 27px 0 20px;
+      text-transform: uppercase;
+
+      @include tablet {
+        padding: 15px 0 8px;
+      }
+    }
+
+    &__desc {
+      max-width: pxToRem(262);
+
+      @include tablet {
+        max-width: pxToRem(140);
+      }
+    }
+  }
+}
+.card-circle {
+  position: relative;
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  background-color: #e6e6e6;
+
+  @include tablet {
+    width: 108px;
+    height: 108px;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: $background-color;
+    top: 8px;
+    left: 8px;
+    width: 188px;
+    height: 188px;
+
+    @include tablet {
+      width: 99px;
+      height: 99px;
+      top: 4px;
+      left: 4px;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 2.04px;
+    left: 2.04px;
+    display: block;
+    content: " ";
+    border-radius: 50%;
+    background-color: $background-color;
+    width: 198px;
+    height: 198px;
+
+    @include tablet {
+      width: 104px;
+      height: 104px;
+    }
+  }
+
+  &__percent {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    font-size: 64px;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    @include flex($justify: center, $align: baseline);
+
+    @include tablet {
+      font-size: 32px;
+    }
+
+    sup {
+      font-size: 32px;
+
+      @include tablet {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__slice {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 102px, 204px, 0px);
+    top: 0;
+
+    &--big {
+      clip: rect(auto, auto, auto, auto);
+    }
+  }
+
+  &__bar {
+    transform: rotate(0deg);
+    position: absolute;
+    border: 28px solid $primary-color;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 102px, 204px, 0px);
+    border-radius: 50%;
+
+    &--small {
+      transform: rotate(30deg);
+    }
+
+    @include tablet {
+      clip: rect(0px, 54px, 108px, 0px);
+    }
+  }
+
+  &__fill {
+    transform: rotate(272deg);
+    position: absolute;
+    border: 28px solid $primary-color;
+    width: 100%;
+    height: 100%;
+    clip: rect(0px, 102px, 204px, 0px);
+    border-radius: 50%;
+
+    &--big {
+      transform: rotate(228deg);
+    }
+
+    @include tablet {
+      clip: rect(0px, 54px, 108px, 0px);
+    }
+  }
+}
+/************************* end of results **********************/

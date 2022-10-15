@@ -1,0 +1,32 @@
+@use "../../abstracts/" as *;
+
+/************************* products **********************/
+.container-products {
+  padding: 67px 0 76px;
+  text-align: center;
+
+  @include tablet {
+    padding: 40px 0 48px;
+  }
+}
+.products {
+  width: 100%;
+  height: auto;
+
+  &__desc {
+    padding-bottom: 66px;
+    width: 50%;
+    margin: 0 auto;
+
+    @include tablet {
+      padding-bottom: 38px;
+      width: 70%;
+    }
+
+    @include mobile {
+      width: 90%;
+    }
+  }
+}
+
+/************************* end of products **********************/

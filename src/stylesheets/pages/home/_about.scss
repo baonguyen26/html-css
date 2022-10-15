@@ -1,0 +1,103 @@
+@use "../../abstracts/" as *;
+
+/************************* about **********************/
+.container-about {
+  padding: 90px 0 73px;
+  color: $background-color;
+  text-align: center;
+
+  @include tablet {
+    padding: 40px 0;
+  }
+}
+.about {
+  width: 100%;
+  @include bg-img("../assets/images/desktop/background-about.png");
+
+  &__title {
+    letter-spacing: $main-spacing;
+  }
+
+  &-slider {
+    @include flex($justify: space-between);
+    margin: 110px 0 53px;
+
+    @include tablet {
+      margin: 60px 15px 40px;
+    }
+
+    @include mobile {
+      margin: 55px 40px 25px;
+    }
+
+    &__icon {
+      width: 64px;
+      height: 64px;
+      margin-top: 15px;
+      cursor: pointer;
+
+      @include tablet {
+        width: 40px;
+        height: 40px;
+      }
+
+      @include mobile {
+        display: none;
+      }
+    }
+
+    &__content {
+      width: 66%;
+      text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.5);
+      line-height: pxToRem(36);
+      font-size: pxToRem(24);
+      text-align: left;
+
+      @include tablet {
+        font-size: pxToRem(12);
+        line-height: pxToRem(16);
+      }
+
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+
+  &-person {
+    @include flex($justify: center, $align: center);
+
+    &__image {
+      width: 72px;
+      height: 72px;
+      border: 2px solid $primary-color;
+      border-radius: 50%;
+
+      @include tablet {
+        width: 48px;
+        height: 48px;
+      }
+
+      img {
+        height: 100%;
+        border-radius: 50%;
+      }
+    }
+
+    &__contact {
+      width: auto;
+      margin-left: 30px;
+
+      @include tablet {
+        margin-left: 16px;
+      }
+    }
+
+    .person-name {
+      color: $primary-color;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+/************************* end of about **********************/
